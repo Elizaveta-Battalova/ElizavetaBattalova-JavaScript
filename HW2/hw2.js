@@ -1,4 +1,4 @@
-let question = prompt("Напишите что-нибудь");
+let question = prompt("Напишите что-нибудь на русском");
 getVowels(question);
 
 function getVowels(question) {
@@ -21,5 +21,5 @@ function getVowels(question) {
       vowelsCount += 1;
     }
   }
-  console.log(vowelsCount);
+  alert(`гласных букв во введенном предложении: ${vowelsCount}`);
 }
