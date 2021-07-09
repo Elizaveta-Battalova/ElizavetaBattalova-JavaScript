@@ -1,20 +1,16 @@
 body{
     text-align: center;
-    background-image: url(https://images.wallpaperscraft.ru/image/nebo_oblaka_sumerki_155867_3840x2400.jpg);
-}
+    /* background-image: url(https://images.wallpaperscraft.ru/image/nebo_oblaka_sumerki_155867_3840x2400.jpg); */
+};
 
 .links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-a{
-    margin: 30px;
-    text-decoration: none;
-    color: rgb(243, 135, 157);
-}
-h1{
-    color: rgb(148, 148, 148);
+    font-size: 250px;
+};
+
+main{
+    border: 1px solid red;
 }

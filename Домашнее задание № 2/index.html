@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <button id="putInfo" onclick="inputVisibility()">
+          Ввод информации о стране
+        </button>
+        <div id="hiddenItems"  style="display: none;">
+            <input class="textinput" id="hiddenInput" type="text" placeholder="Введите страну"/>
+            <input class="textinput" id="hiddenInput2" type="text" placeholder="Введите столицу страны"/>
+            <input id="btn1" type="submit">
+        </div>
+      </div>
+
+      <div class="showCountries">
+        <button id="btn" onclick="showCountries()">Перечень всех стран</button>
+        <p id="addInfo"></p>
+      </div>
+
+      <div>
+        <button id="getInfo"; onclick="secondBlockHiddenInputVisibility()">
+            Получение информации о стране
+        </button>
+        <div id="secondBlockhiddenItems" style="display: none;">
+            <input class="textinput" id="secondBlockHiddenInput" type="text" placeholder="Введите страну"/>
+            <input type="submit" onclick="confirm3()">
+        </div>
+      </div>
+
+      <div id="deleteCountries">
+        <button>Удаление информации о стране</button>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
