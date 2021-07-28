@@ -1,0 +1,21 @@
+body{
+    background-image: url(https://images.wallpaperscraft.ru/image/nebo_oblaka_sumerki_155867_3840x2400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+h1{
+    color: violet;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(168, 167, 164);
+}
