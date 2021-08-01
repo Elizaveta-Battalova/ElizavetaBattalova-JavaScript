@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper_shop {
+    display: grid;
+    grid-template-columns: 1.3fr 4.7fr;
+    width: 1140px;
+    min-height: 400px;
+    margin: 0 auto;
+    gap: 15px;
+    margin-top: 20px;    
+}
+
+.navbar_shop {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+form {
+    margin-top: 30px;
+}
+
+.navbar_shop input {
+    width: 150px;
+    height: 30px;
+}
+
+.navbar_shop p {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.add,
+.edit  {
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.list_phones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-rows: 1fr;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    gap: 10px;
+}
+
+.hide {
+    display: none;
+}
