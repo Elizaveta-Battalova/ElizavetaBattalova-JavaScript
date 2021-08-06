@@ -1,5 +1,5 @@
 let isPalindrome = function(string) {
-  let strLength = string.length;
+  let strLength = string.length.toLowerCase();
   if (strLength < 2) return alert("Палиндорм ! :) ");
   if (string[0] === string[strLength - 1]) {
     return isPalindrome(string.slice(1, strLength - 1));

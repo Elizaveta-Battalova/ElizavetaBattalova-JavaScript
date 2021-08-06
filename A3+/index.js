@@ -1,5 +1,7 @@
 let isPalindrome = function (string) {
-  if (string == string.split("").reverse().join("")) {
+let stringResult = string.toLowerCase().split(" ").join("");
+let str = string.toLowerCase().split(" ").reverse().join("")
+  if (stringResult == str) {
     alert(string + " палиндорм !");
   } else {
     alert(string + " не палиндорм !");
