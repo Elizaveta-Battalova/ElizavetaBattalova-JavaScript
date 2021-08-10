@@ -10,13 +10,13 @@
   <body>
     <main>
       <div>
-        <button id="putInfo" onclick="inputVisibility()">
+        <button id="putInfo" onclick="addCountry()">
           Ввод информации о стране
         </button>
         <div id="hiddenItems"  style="display: none;">
             <input class="textinput" id="hiddenInput" type="text" placeholder="Введите страну"/>
             <input class="textinput" id="hiddenInput2" type="text" placeholder="Введите столицу страны"/>
-            <input id="btn1" type="submit">
+            <input id="btn1" type="submit" onclick="putInfo()">
         </div>
       </div>
 
@@ -26,7 +26,7 @@
       </div>
 
       <div>
-        <button id="getInfo"; onclick="secondBlockHiddenInputVisibility()">
+        <button id="getInfo"; onclick="getInfo()">
             Получение информации о стране
         </button>
         <div id="secondBlockhiddenItems" style="display: none;">
@@ -36,10 +36,14 @@
         </div>
       </div>
 
-      <div id="deleteCountries">
-        <button>Удаление информации о стране</button>
-        <input type="text" placeholder="введите страну">
-        <input type="submit">
+      <div >
+        <button onclick="deleteCountries()">
+          Удаление информации о стране
+        </button>
+        <div id="deleteCountries"  style="display: none;">
+           <input type="text" placeholder="введите страну">
+        <input type="submit" onclick="deleteCountry()">
+        </div>
       </div>
     </main>
     <script src="./main.js"></script>

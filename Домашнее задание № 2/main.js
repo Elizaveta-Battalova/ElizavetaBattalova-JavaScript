@@ -1,63 +1,64 @@
-let ShowInput = document.getElementById("putInfo");
-
-function inputVisibility(ShowInput) {
+function addCountry() {
   let item = document.getElementById("hiddenItems");
   if (item.style.display == "none") item.style.display = "block";
   else item.style.display = "none";
-}
+};
 
-let secondBlockShowInput = document.getElementById("getInfo");
-
-function secondBlockHiddenInputVisibility(secondBlockShowInput) {
+function getInfo() {
   let item = document.getElementById("secondBlockhiddenItems");
   if (item.style.display == "none") item.style.display = "block";
   else item.style.display = "none";
-}
+};
+
+function deleteCountries() {
+  let item = document.getElementById("deleteCountries");
+  if (item.style.display == "none") item.style.display = "block";
+  else item.style.display = "none";
+};
 
 const arr = [];
 
-let countryObject = {
-  country: "",
-  capital: "",
-};
-
-let secondButton = document.getElementById("btn1");
-
-secondButton.onclick = function pushInfo() {
+let putInfo = function() {
   let info = document.getElementById("hiddenInput").value;
   let info2 = document.getElementById("hiddenInput2").value;
+  let countryObject = {
+    country: "",
+    capital: "",
+  };
   countryObject.country = info;
   countryObject.capital = info2;
   arr.push(countryObject);
-  console.log(arr);
+  document.getElementById("hiddenInput").value = '';
+  document.getElementById("hiddenInput2").value = '';
 };
 
 let showCountries = function () {
   let info = "";
-  let showCountry = countryObject.country;
-
-  for (i = 0; i < showCountry.length; i++) {
-    info += `<p>${showCountry[i]}</p>`;
+  for (i = 0; i < arr.length; i++) {
+    let showCountry = arr[i].country;
+    info += `<p>${showCountry}</p>`;
   }
-
   const card = document.getElementById("addInfo");
-
   card.innerHTML = info;
 };
 
 let getInfoCapital = function () {
   let info = "";
-  let showCapital = countryObject.capital;
-
-  for (i = 0; i < showCapital.length; i++) {
-    info += `<p>${showCapital[i]}</p>`;
+  for (i = 0; i < arr.length; i++) {
+    let showCapital = arr[i].capital;
+    info += `<p>${showCapital}</p>`;
   }
   const card = document.getElementById("showCapital");
-
   card.innerHTML = info;
+  document.getElementById("secondBlockHiddenInput").value = '';
 };
 
 let deleteCountry = function() {
-  let info = "";
-  let deleteInfo = delete countryObject;
+  for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i].country == 'russia') {
+      let removedObject = arr.splice(i,1);
+      removedObject = null;
+      break;
+    }
+}
 }
