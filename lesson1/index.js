@@ -4,39 +4,32 @@ let gender = confirm("Ваш пол - мужской?");
 let genderMessage = GetGenderMessage();
 let pensionMessage = GetPensionMessage();
 
-  alert(`Ваше имя: ${name}\nВаш возраст: ${age}\nВаш пол: ${genderMessage}\nВы на пенсии: ${pensionMessage}` );
-  
-  function GetAge()
-  {
-    let age = prompt ("Введите ваш возраст");
-    while ( !parseInt(age) ) {
-        alert ('Нужно писать число!');
-        age = prompt ("Введите ваш возраст");
-    } 
+alert(
+  `Ваше имя: ${name}\nВаш возраст: ${age}\nВаш пол: ${genderMessage}\nВы на пенсии: ${pensionMessage}`
+);
 
-    return age;
+function GetAge() {
+  let age = prompt("Введите ваш возраст");
+  while (!parseInt(age)) {
+    alert("Нужно писать число!");
+    age = prompt("Введите ваш возраст");
   }
 
-
-
-function GetPensionMessage()
-{
-    if((age >= 65 && gender) || (age >= 60 && !gender))
-    {
-        return "Да.";
-    }
-
-    return "Нет."
+  return age;
 }
 
+function GetPensionMessage() {
+  if ((age >= 65 && gender) || (age >= 60 && !gender)) {
+    return "Да.";
+  }
+
+  return "Нет.";
+}
 
 function GetGenderMessage() {
-    if(gender)
-    {
-         return "мужской";
-    }
-    else
-    {
-        return "женский";
-    }
+  if (gender) {
+    return "мужской";
+  } else {
+    return "женский";
   }
+}
