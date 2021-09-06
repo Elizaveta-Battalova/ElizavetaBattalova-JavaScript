@@ -1,0 +1,12 @@
+.canvas {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
+  
+}
+
+body{
+  background-image: url(./Game_Background_150.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
