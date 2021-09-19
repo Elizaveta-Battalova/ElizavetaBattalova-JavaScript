@@ -1,0 +1,132 @@
+html, body {
+ height: 100%;
+ margin: 0;
+} 
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+} 
+
+.main{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("./img/bg2.jpg");
+  position: absolute;
+  background-size: cover;
+  z-index: 11111111;
+  
+}
+.game {
+ height: 100%;
+ width: 100%;
+  margin: 0;
+  background-image: url("./img/forest2.jpg");
+  animation: scroll linear 10s infinite;
+}
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000% 0;
+  }
+}
+
+
+
+#honey {
+  width: 150px;
+  height: 150px;
+  background-image: url("./img/honey.png");
+  background-size: 150px 150px;
+  position: relative;
+  top: 640px;
+  z-index: 1;
+}
+
+.jump {
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 100px;
+  }
+
+  30% {
+    top: 80px;
+  }
+
+  50% {
+    top: 50px;
+  }
+
+  80% {
+    top: 100px;
+  }
+
+  100% {
+    top: 120px;
+  }
+}
+
+#pooh {
+  width: 320px;
+  height: 340px;
+  position: relative;
+  top: 400px;
+  background-image: url("img/pooh.png");
+  background-size: 220px 240px;
+  background-repeat: no-repeat;
+  animation: block 3s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 1980px;
+  }
+
+  100% {
+    left: -50px;
+  }
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 200px;
+  font-weight: 400;
+  padding-top:30px;
+  padding-right: 135px;
+  margin: 0;
+  z-index: 11;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow .4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
