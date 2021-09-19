@@ -25,7 +25,7 @@ let isAlive = setInterval(function () {
     window.getComputedStyle(pooh).getPropertyValue("left")
   );
   if (poohLeft < 50 && poohLeft > 0 && honeyTop >= 150) {
-    alert("Game Over!");
+    alert("Oh my Pooh! Try again");
   }
 }, 10);
 

@@ -2,17 +2,6 @@ html, body {
  height: 100%;
  margin: 0;
 } 
-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-} 
 
 .main{
   height: 100%;
@@ -110,6 +99,7 @@ p {
   padding-right: 135px;
   margin: 0;
   z-index: 11;
+  margin-left: 100px;
 }
 .glow {
   color: #fff;
