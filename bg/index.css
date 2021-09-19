@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../TEST/img/forest.png");
+    animation: scroll linear 10s infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
